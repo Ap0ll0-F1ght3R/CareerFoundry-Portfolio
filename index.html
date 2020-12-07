@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://fonts.googleapis.com/css?
+	family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
 	<title>First Webpage</title>	
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -8,7 +10,7 @@
 	<div>
 		<div class="intro">
 		<div class="container">
-			<img width="200" heigh="100" src="https://via.placeholder.com/150" />
+			<img width="350" heigh="250" class="profile-picture" src="C:\Users\Kevin\OneDrive\Desktop\Portfolio\images\profile-picture.jpg" />
 			<h1>Kevin D Moeller	</h1>
 			<h3>web developer at careerfoundry</h3>
 			<p class="quote">{{Pause and ponder}}</p>
@@ -37,16 +39,29 @@
 <div>
 	<h3 class="projects-heading">My Projects</h3>
 	<div class="projects-grid">
-		<img class="project-image" src="https://via.placeholder.com/300"/>
-		<img class="project-image" src="https://via.placeholder.com/300"/>
-		<img class="project-image" src="https://via.placeholder.com/300"/>
-		<img class="project-image" src="https://via.placeholder.com/300"/>
+		
+		<div class="project-image-wrapper">
+			<h4>Project 1</h4>
+			<img class="project-image" src="images/project-1.jpg" />
+		</div>
+		<div class="project-image-wrapper">
+			<h4>Project 2</h4>
+			<img class="project-image" src="images/project-2.jpg" />
+		</div>
+		<div class="project-image-wrapper">
+			<h4>project-3</h4>
+			<img class="project-image" src="images/project-3.jpg" />
+		</div>
+		<div class="project-image-wrapper">
+			<h4>project-4</h4>
+			<img class="project-image" src="images/project-4.jpg" />
+		</div>
 	</div>
 </div>
-<div>
-	<div>
+<div class="links-and-contact">
+	<div class="links">
 		<h3>Links</h3>
-		<ul>
+		<ul class="links-list">
 			<li>
 				<a href="https://github.com/">Github</a>
 			</li>
@@ -62,22 +77,17 @@
 	<div>
 		<form action="#">
 			<label for="email">
-				Email: <input type="email" id="email" placeholder="Enter your email" /> 
+				<h4>Email</h4>
+				<input type="email" id="email" placeholder="Enter your email" />
 			</label>
 			<label for="message">
-				Message: <textarea id="message">Your Message</textarea>
+				<h4>Message</h4>
+				<textarea id="message">Your Message</textarea>
 			</label>
-			<input type="submit" valid="Send Message" />
+			<div class="submit-button-wrapper">
+				<input type="submit" valid="Send Message" />
+			</div>
 		</form>
-	</div>
-</div>
-	<div class="grid-table">
-		<div>1</div>
-		<div>2</div>
-		<div>3</div>
-		<div>4</div>
-		<div>5</div>
-		<div>6</div>
 	</div>
 </div>
 </body>
